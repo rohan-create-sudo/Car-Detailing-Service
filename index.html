@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars Town | Premium Car Detailing — Theta 2, Greater Noida</title>
+    <meta name="description"
+        content="Cars Town — Premium car detailing, ceramic coating, car washing & vehicle maintenance in Theta 2, Greater Noida. Rated 4.6★ on Google. Book now." />
+    <meta name="keywords"
+        content="car detailing Greater Noida, ceramic coating Theta 2, car wash Greater Noida, Cars Town, automotive care" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== LOADER ===== -->
+    <div id="loader">
+        <div class="ldr-inner">
+            <div class="ldr-svg-wrap">
+                <svg class="ldr-svg" viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <filter id="glow">
+                            <feGaussianBlur stdDeviation="2.5" result="cb" />
+                            <feMerge>
+                                <feMergeNode in="cb" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                        <linearGradient id="cg" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#c8102e" />
+                            <stop offset="50%" style="stop-color:#ffffff" />
+                            <stop offset="100%" style="stop-color:#c8102e" />
+                        </linearGradient>
+                        <linearGradient id="sg" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:transparent;stop-opacity:0" />
+                            <stop offset="50%" style="stop-color:#e8294a;stop-opacity:.7" />
+                            <stop offset="100%" style="stop-color:transparent;stop-opacity:0" />
+                        </linearGradient>
+                    </defs>
+                    <path class="car-path"
+                        d="M50,150 L80,150 Q85,130 100,120 L160,90 Q200,65 260,65 Q320,65 360,90 L390,105 L420,110 L440,120 Q455,130 460,145 L460,150 Z"
+                        stroke="url(#cg)" stroke-width="2.5" fill="none" filter="url(#glow)" />
+                    <path class="car-path" d="M160,90 Q200,55 260,50 Q320,50 360,90" stroke="url(#cg)"
+                        stroke-width="2.5" fill="none" filter="url(#glow)" />
+                    <line class="car-path" x1="163" y1="90" x2="210" y2="65" stroke="url(#cg)" stroke-width="1.5"
+                        filter="url(#glow)" />
+                    <line class="car-path" x1="357" y1="90" x2="320" y2="65" stroke="url(#cg)" stroke-width="1.5"
+                        filter="url(#glow)" />
+                    <circle class="car-path" cx="140" cy="152" r="28" stroke="url(#cg)" stroke-width="2.5" fill="none"
+                        filter="url(#glow)" />
+                    <circle cx="140" cy="152" r="13" stroke="url(#cg)" stroke-width="1.5" fill="none"
+                        filter="url(#glow)" />
+                    <circle class="car-path" cx="380" cy="152" r="28" stroke="url(#cg)" stroke-width="2.5" fill="none"
+                        filter="url(#glow)" />
+                    <circle cx="380" cy="152" r="13" stroke="url(#cg)" stroke-width="1.5" fill="none"
+                        filter="url(#glow)" />
+                    <ellipse class="car-path" cx="455" cy="135" rx="8" ry="5" stroke="#c8102e" stroke-width="2"
+                        fill="none" filter="url(#glow)" />
+                    <ellipse class="car-path" cx="62" cy="140" rx="8" ry="5" stroke="#c8102e" stroke-width="2"
+                        fill="none" filter="url(#glow)" />
+                    <line class="car-path" x1="30" y1="180" x2="490" y2="180" stroke="url(#cg)" stroke-width="1"
+                        opacity=".35" filter="url(#glow)" />
+                    <rect class="shine-sweep" x="-80" y="40" width="80" height="160" fill="url(#sg)" opacity=".7" />
+                </svg>
+            </div>
+            <div class="ldr-logo"><span class="lc-r">CARS</span><span class="lc-w">TOWN</span></div>
+            <p class="ldr-tagline">Premium Car Detailing &amp; Automotive Care</p>
+            <div class="ldr-bar-track">
+                <div class="ldr-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Particles -->
+    <div id="particles-container"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <header id="navbar">
+        <nav class="nav-inner">
+            <div class="nav-logo">
+                <span class="ni"><i class="fas fa-car"></i></span>
+                <span><span class="nl-r">CARS</span>TOWN</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="nav-cta">Book Now</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mob-menu" id="mobMenu">
+        <button class="mob-close" id="mobClose"><i class="fas fa-times"></i></button>
+        <ul>
+            <li><a href="#home" class="mob-link">Home</a></li>
+            <li><a href="#about" class="mob-link">About</a></li>
+            <li><a href="#services" class="mob-link">Services</a></li>
+            <li><a href="#gallery" class="mob-link">Gallery</a></li>
+            <li><a href="#reviews" class="mob-link">Reviews</a></li>
+            <li><a href="#contact" class="mob-link">Contact</a></li>
+            <li><a href="#contact" class="mob-cta">Book a Service</a></li>
+        </ul>
+    </div>
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-vignette"></div>
+        <div class="hero-inner">
+            <div class="hero-badge" data-aos="fade-down" data-aos-delay="200">
+                <i class="fas fa-star"></i> 4.6 / 5 on Google &nbsp;·&nbsp; 37+ Verified Reviews
+            </div>
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="350">
+                Premium Car<br><span class="g-red">Detailing</span> Experience
+            </h1>
+            <p class="hero-sub" data-aos="fade-up" data-aos-delay="520">
+                Professional washing, polishing &amp; protection for your vehicle.<br>
+                Trusted by car enthusiasts across Greater Noida.
+            </p>
+            <div class="hero-btns" data-aos="fade-up" data-aos-delay="680">
+                <a href="#contact" class="btn btn-red"><span>Book a Service</span><i class="fas fa-arrow-right"></i></a>
+                <a href="#services" class="btn btn-outline"><span>Explore Services</span><i
+                        class="fas fa-chevron-down"></i></a>
+            </div>
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="850">
+                <div class="hs-item"><span class="hs-num">500+</span><span class="hs-label">Happy Clients</span></div>
+                <div class="hs-div"></div>
+                <div class="hs-item"><span class="hs-num">4.6★</span><span class="hs-label">Google Rating</span></div>
+                <div class="hs-div"></div>
+                <div class="hs-item"><span class="hs-num">8+</span><span class="hs-label">Services</span></div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-ring">
+                <div class="scroll-dot"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+        <div class="fl fl-1"><i class="fas fa-spray-can-sparkles"></i></div>
+        <div class="fl fl-2"><i class="fas fa-shield-halved"></i></div>
+        <div class="fl fl-3"><i class="fas fa-gem"></i></div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="about-sec">
+        <div class="wrap">
+            <div class="about-grid">
+                <div class="about-img-box" data-aos="fade-right" data-aos-duration="850">
+                    <img src="assets/images/workshop.jpg" alt="Cars Town Workshop" class="about-img"
+                        onerror="this.src='https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=700&q=80'">
+                    <div class="about-float-badge"><i class="fas fa-award"></i> Premium Quality</div>
+                    <div class="about-img-caption"><span class="aic-num">4.6</span><span class="aic-label">⭐
+                            Rated</span></div>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="850">
+                    <div class="tag tag-green"><i class="fas fa-car-wash"></i> About Us</div>
+                    <h2 class="sec-title">About <span class="g-green">Cars Town</span></h2>
+                    <p class="about-p">Cars Town in Theta 2, Greater Noida is a trusted destination for professional car
+                        detailing and vehicle maintenance. Known for its skilled technicians, advanced equipment, and
+                        customer-first approach, the workshop provides high-quality automotive care to keep vehicles in
+                        perfect condition.</p>
+                    <p class="about-p">Whether it's a quick wash or a full ceramic coating, we take pride in delivering
+                        showroom-quality results every time — because your car deserves nothing but the best.</p>
+                    <div class="about-feats">
+                        <div class="feat">
+                            <div class="feat-icon"><i class="fas fa-certificate"></i></div>
+                            <div>
+                                <h4>Certified Technicians</h4>
+                                <p>Trained professionals with industry expertise</p>
+                            </div>
+                        </div>
+                        <div class="feat">
+                            <div class="feat-icon"><i class="fas fa-tools"></i></div>
+                            <div>
+                                <h4>Advanced Equipment</h4>
+                                <p>Latest tools and premium detailing products</p>
+                            </div>
+                        </div>
+                        <div class="feat">
+                            <div class="feat-icon"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <h4>Open 6 Days + 24/7 Sunday</h4>
+                                <p>Mon–Sat: 8 AM–8 PM &nbsp;|&nbsp; Sunday: Open 24 Hours</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#services" class="btn btn-green">View Our Services <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section id="services" class="services-sec">
+        <div class="wrap">
+            <div class="sec-head" data-aos="fade-up">
+                <div class="tag tag-blue"><i class="fas fa-sparkles"></i> What We Offer</div>
+                <h2 class="sec-title">Our <span class="g-blue">Services</span></h2>
+                <p class="sec-sub">Premium automotive care services tailored to perfection</p>
+            </div>
+            <div class="svcs-grid">
+                <div class="svc-card" data-aos="fade-up" data-aos-delay="80">
+                    <div class="svc-shimmer"></div>
+                    <div class="svc-icon-wrap">
+                        <div class="svc-icon"><i class="fas fa-droplet"></i></div>
+                    </div>
+                    <h3>Car Washing</h3>
+                    <p>Meticulous exterior wash using premium pH-neutral soaps leaving your car spotless and gleaming.
+                    </p>
+                    <a href="#contact" class="svc-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="svc-card" data-aos="fade-up" data-aos-delay="120">
+                    <div class="svc-shimmer"></div>
+                    <div class="svc-icon-wrap">
+                        <div class="svc-icon"><i class="fas fa-couch"></i></div>
+                    </div>
+                    <h3>Interior Cleaning</h3>
+                    <p>Deep cleaning of seats, carpets, dashboard and all interior surfaces for a pristine cabin.</p>
+                    <a href="#contact" class="svc-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="svc-card" data-aos="fade-up" data-aos-delay="160">
+                    <div class="svc-shimmer"></div>
+                    <div class="svc-icon-wrap">
+                        <div class="svc-icon"><i class="fas fa-gauge-high"></i></div>
+                    </div>
+                    <h3>Engine Diagnostics</h3>
+                    <p>Advanced OBD scanning and multi-point inspection to detect and resolve engine issues.</p>
+                    <a href="#contact" class="svc-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="svc-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="svc-shimmer"></div>
+                    <div class="svc-icon-wrap">
+                        <div class="svc-icon"><i class="fas fa-oil-can"></i></div>
+                    </div>
+                    <h3>Oil Change</h3>
+                    <p>Full or semi-synthetic oil change with filter replacement for peak engine performance.</p>
+                    <a href="#contact" class="svc-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="svc-card" data-aos="fade-up" data-aos-delay="240">
+                    <div class="svc-shimmer"></div>
+                    <div class="svc-icon-wrap">
+                        <div class="svc-icon"><i class="fas fa-circle-stop"></i></div>
+                    </div>
+                    <h3>Brake Repair</h3>
+                    <p>Comprehensive brake inspection, pad replacement, and disc resurfacing for safe stopping.</p>
+                    <a href="#contact" class="svc-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="svc-card" data-aos="fade-up" data-aos-delay="280">
+                    <div class="svc-shimmer"></div>
+                    <div class="svc-icon-wrap">
+                        <div class="svc-icon"><i class="fas fa-star-of-life"></i></div>
+                    </div>
+                    <h3>Car Polishing</h3>
+                    <p>Multi-stage paint correction and machine polishing to restore your car's factory-fresh shine.</p>
+                    <a href="#contact" class="svc-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="svc-card featured" data-aos="fade-up" data-aos-delay="320">
+                    <div class="feat-pill">Most Popular</div>
+                    <div class="svc-shimmer"></div>
+                    <div class="svc-icon-wrap">
+                        <div class="svc-icon"><i class="fas fa-shield-halved"></i></div>
+                    </div>
+                    <h3>Ceramic Coating</h3>
+                    <p>Long-lasting nano-ceramic protection that repels water, dirt, and UV rays for years of shine.</p>
+                    <a href="#contact" class="svc-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="svc-card" data-aos="fade-up" data-aos-delay="360">
+                    <div class="svc-shimmer"></div>
+                    <div class="svc-icon-wrap">
+                        <div class="svc-icon"><i class="fas fa-gem"></i></div>
+                    </div>
+                    <h3>Complete Detailing</h3>
+                    <p>Our signature full-detail package — exterior, interior, engine bay, and protection in one.</p>
+                    <a href="#contact" class="svc-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHY US ===== -->
+    <section class="why-sec">
+        <div class="wrap">
+            <div class="why-inner">
+                <div data-aos="fade-right">
+                    <div class="tag tag-red"><i class="fas fa-trophy"></i> Why Cars Town</div>
+                    <h2 class="sec-title">The <span class="g-red">Difference</span> is in the Details</h2>
+                    <p class="sec-sub">We treat every car like it's our own — with precision, passion, and pride.</p>
+                    <ul class="why-list">
+                        <li><i class="fas fa-check-circle"></i> Premium imported detailing products</li>
+                        <li><i class="fas fa-check-circle"></i> ISO-grade dust-free environment</li>
+                        <li><i class="fas fa-check-circle"></i> Real-time progress updates</li>
+                        <li><i class="fas fa-check-circle"></i> 100% customer satisfaction guarantee</li>
+                        <li><i class="fas fa-check-circle"></i> Transparent pricing — no hidden costs</li>
+                    </ul>
+                </div>
+                <div class="why-nums" data-aos="fade-left">
+                    <div class="wbox"><span class="wval" data-count="500">0</span><span class="wsuf">+</span><span
+                            class="wlbl">Cars Detailed</span></div>
+                    <div class="wbox"><span class="wval" data-count="37">0</span><span class="wsuf">+</span><span
+                            class="wlbl">Verified Reviews</span></div>
+                    <div class="wbox"><span class="wval" data-count="4">0</span><span class="wsuf">.6★</span><span
+                            class="wlbl">Google Rating</span></div>
+                    <div class="wbox"><span class="wval" data-count="8">0</span><span class="wsuf">+</span><span
+                            class="wlbl">Services</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section id="gallery" class="gallery-sec">
+        <div class="wrap">
+            <div class="sec-head" data-aos="fade-up">
+                <div class="tag tag-silver"><i class="fas fa-images"></i> Our Work</div>
+                <h2 class="sec-title">Before &amp; After<br><span class="g-red">Gallery</span></h2>
+                <p class="sec-sub">Real results from real vehicles — see the transformation</p>
+            </div>
+            <div class="gal-filters" data-aos="fade-up" data-aos-delay="150">
+                <button class="f-btn active" data-filter="all">All</button>
+                <button class="f-btn" data-filter="wash">Car Wash</button>
+                <button class="f-btn" data-filter="detail">Detailing</button>
+                <button class="f-btn" data-filter="ceramic">Ceramic</button>
+                <button class="f-btn" data-filter="interior">Interior</button>
+            </div>
+            <div class="gal-grid">
+                <div class="gal-item" data-category="detail" data-aos="zoom-in" data-aos-delay="80">
+                    <img src="assets/images/car1.jpg" alt="Premium Car Detailing"
+                        onerror="this.src='https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&q=80'">
+                    <div class="gal-over">
+                        <div class="gal-over-c"><i class="fas fa-expand"></i><span>Premium Detailing</span></div>
+                    </div>
+                </div>
+                <div class="gal-item wide" data-category="ceramic" data-aos="zoom-in" data-aos-delay="120">
+                    <img src="assets/images/car2.jpg" alt="Ceramic Coating"
+                        onerror="this.src='https://images.unsplash.com/photo-1617531653332-bd46c16f4d68?w=800&q=80'">
+                    <div class="gal-over">
+                        <div class="gal-over-c"><i class="fas fa-expand"></i><span>Ceramic Coating</span></div>
+                    </div>
+                </div>
+                <div class="gal-item" data-category="wash" data-aos="zoom-in" data-aos-delay="160">
+                    <img src="assets/images/car3.jpg" alt="Car Wash"
+                        onerror="this.src='https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=600&q=80'">
+                    <div class="gal-over">
+                        <div class="gal-over-c"><i class="fas fa-expand"></i><span>Premium Wash</span></div>
+                    </div>
+                </div>
+                <div class="gal-item wide" data-category="detail" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="assets/images/car5.jpg" alt="Complete Detailing"
+                        onerror="this.src='https://images.unsplash.com/photo-1529636444744-adffc9135a5e?w=800&q=80'">
+                    <div class="gal-over">
+                        <div class="gal-over-c"><i class="fas fa-expand"></i><span>Complete Detailing</span></div>
+                    </div>
+                </div>
+                <div class="gal-item" data-category="interior" data-aos="zoom-in" data-aos-delay="240">
+                    <img src="assets/images/car4.jpg" alt="Interior Cleaning"
+                        onerror="this.src='https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=600&q=80'">
+                    <div class="gal-over">
+                        <div class="gal-over-c"><i class="fas fa-expand"></i><span>Interior Detail</span></div>
+                    </div>
+                </div>
+                <div class="gal-item" data-category="wash" data-aos="zoom-in" data-aos-delay="280">
+                    <img src="assets/images/car6.jpg" alt="Mirror Polish"
+                        onerror="this.src='https://images.unsplash.com/photo-1580274455191-1c62238fa1c3?w=600&q=80'">
+                    <div class="gal-over">
+                        <div class="gal-over-c"><i class="fas fa-expand"></i><span>Mirror Polish</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Before / After Slider -->
+            <div class="ba-wrap" data-aos="fade-up">
+                <h3 class="ba-heading">See the <span class="g-red">Transformation</span></h3>
+                <div class="ba-slider" id="baSlider">
+                    <div class="ba-after">
+                        <img src="assets/images/after.jpg" alt="After Detailing"
+                            onerror="this.src='https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=900&q=80'">
+                        <span class="ba-tag after">After</span>
+                    </div>
+                    <div class="ba-before" id="baBefore">
+                        <img src="assets/images/before.jpg" alt="Before Detailing"
+                            onerror="this.src='https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=900&q=80'">
+                        <span class="ba-tag before">Before</span>
+                    </div>
+                    <div class="ba-handle" id="baHandle">
+                        <div class="ba-line"></div>
+                        <div class="ba-knob"><i class="fas fa-arrows-left-right"></i></div>
+                        <div class="ba-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <button class="lb-close" id="lbClose"><i class="fas fa-times"></i></button>
+            <button class="lb-prev" id="lbPrev"><i class="fas fa-chevron-left"></i></button>
+            <div class="lb-img-wrap"><img src="" alt="" id="lbImg"></div>
+            <button class="lb-next" id="lbNext"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- ===== REVIEWS ===== -->
+    <section id="reviews" class="reviews-sec">
+        <div class="wrap">
+            <div class="sec-head" data-aos="fade-up">
+                <div class="tag tag-red"><i class="fas fa-star"></i> Testimonials</div>
+                <h2 class="sec-title">What Our <span class="g-red">Clients Say</span></h2>
+                <div class="rating-sup">
+                    <div class="r-big">4.6</div>
+                    <div class="r-info">
+                        <div class="r-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star-half-stroke"></i></div>
+                        <span>Based on 37 Google Reviews</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-wrapper">
+                <div class="reviews-track" id="rvTrack">
+                    <div class="rv-card">
+                        <div class="rv-head">
+                            <div class="rv-av">RK</div>
+                            <div class="rv-av-info">
+                                <h4>Rahul Kumar</h4>
+                                <div class="rv-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="rv-g"><i class="fab fa-google"></i></div>
+                        </div>
+                        <p class="rv-text">"Absolutely brilliant service! Got my car ceramic coated here and the results
+                            are stunning. The shine is incredible and the team was very professional throughout."</p>
+                        <span class="rv-date">2 weeks ago</span>
+                    </div>
+                    <div class="rv-card">
+                        <div class="rv-head">
+                            <div class="rv-av">PS</div>
+                            <div class="rv-av-info">
+                                <h4>Priya Sharma</h4>
+                                <div class="rv-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="rv-g"><i class="fab fa-google"></i></div>
+                        </div>
+                        <p class="rv-text">"Best car detailing in Greater Noida by far. My old Swift looks brand new
+                            after the complete detailing package. Very satisfied with the quality and pricing!"</p>
+                        <span class="rv-date">1 month ago</span>
+                    </div>
+                    <div class="rv-card">
+                        <div class="rv-head">
+                            <div class="rv-av">AM</div>
+                            <div class="rv-av-info">
+                                <h4>Amit Mishra</h4>
+                                <div class="rv-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star-half-stroke"></i></div>
+                            </div>
+                            <div class="rv-g"><i class="fab fa-google"></i></div>
+                        </div>
+                        <p class="rv-text">"Got interior cleaning done for my Honda City. Amazing job on the seats and
+                            dashboard. The car smells and feels brand new. Highly recommended!"</p>
+                        <span class="rv-date">3 weeks ago</span>
+                    </div>
+                    <div class="rv-card">
+                        <div class="rv-head">
+                            <div class="rv-av">NK</div>
+                            <div class="rv-av-info">
+                                <h4>Neha Kapoor</h4>
+                                <div class="rv-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="rv-g"><i class="fab fa-google"></i></div>
+                        </div>
+                        <p class="rv-text">"Impressed by the attention to detail. They noticed scratches I had never
+                            seen. The polishing work transformed my car completely. 5 stars easily!"</p>
+                        <span class="rv-date">1 month ago</span>
+                    </div>
+                    <div class="rv-card">
+                        <div class="rv-head">
+                            <div class="rv-av">VS</div>
+                            <div class="rv-av-info">
+                                <h4>Vikram Singh</h4>
+                                <div class="rv-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star-half-stroke"></i></div>
+                            </div>
+                            <div class="rv-g"><i class="fab fa-google"></i></div>
+                        </div>
+                        <p class="rv-text">"Cars Town is the go-to place for car care in Greater Noida. Got my BMW
+                            detailed here — flawless experience. The team is knowledgeable and very friendly."</p>
+                        <span class="rv-date">2 months ago</span>
+                    </div>
+                    <div class="rv-card">
+                        <div class="rv-head">
+                            <div class="rv-av">DG</div>
+                            <div class="rv-av-info">
+                                <h4>Deepak Gupta</h4>
+                                <div class="rv-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="rv-g"><i class="fab fa-google"></i></div>
+                        </div>
+                        <p class="rv-text">"Excellent work on my Creta! Engine cleaning, full exterior and interior
+                            detailing done seamlessly. Very reasonable pricing for the quality you get. Will return!"
+                        </p>
+                        <span class="rv-date">3 months ago</span>
+                    </div>
+                </div>
+                <button class="rv-nav prev" id="rvPrev"><i class="fas fa-chevron-left"></i></button>
+                <button class="rv-nav next" id="rvNext"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="rv-dots" id="rvDots"></div>
+        </div>
+    </section>
+
+    <!-- ===== LOCATION ===== -->
+    <section id="location" class="loc-sec">
+        <div class="wrap">
+            <div class="sec-head" data-aos="fade-up">
+                <div class="tag tag-red"><i class="fas fa-location-dot"></i> Find Us</div>
+                <h2 class="sec-title">Our <span class="g-red">Location</span></h2>
+            </div>
+            <div class="loc-grid">
+                <div class="loc-list" data-aos="fade-right">
+                    <div class="loc-row">
+                        <div class="loc-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="loc-txt">
+                            <h4>Address</h4>
+                            <p>Cars Town, Opposite Migsun Wynn<br>Theta 2, Greater Noida</p>
+                        </div>
+                    </div>
+                    <div class="loc-row">
+                        <div class="loc-icon"><i class="fas fa-clock"></i></div>
+                        <div class="loc-txt">
+                            <h4>Working Hours</h4>
+                            <p>Monday – Saturday: 8:00 AM – 8:00 PM<br><span class="open24">Sunday: Open 24 Hours
+                                    🎉</span></p>
+                        </div>
+                    </div>
+                    <div class="loc-row">
+                        <div class="loc-icon"><i class="fas fa-phone"></i></div>
+                        <div class="loc-txt">
+                            <h4>Contact</h4>
+                            <p><a href="tel:+919999999999">+91 99999 99999</a></p>
+                        </div>
+                    </div>
+                    <div class="loc-row">
+                        <div class="loc-icon"><i class="fas fa-star"></i></div>
+                        <div class="loc-txt">
+                            <h4>Google Rating</h4>
+                            <p>⭐ 4.6 / 5 — 37 Reviews</p>
+                        </div>
+                    </div>
+                    <a href="https://www.google.com/maps/search/Cars+Town+Theta+2+Greater+Noida" target="_blank"
+                        class="btn btn-red" style="margin-top:8px">
+                        <i class="fas fa-map"></i> Get Directions
+                    </a>
+                </div>
+                <div class="loc-map" data-aos="fade-left">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.162219699!2d77.5044!3d28.4744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc1ade3f71f2b%3A0x0!2sTheta+2%2C+Greater+Noida!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        title="Cars Town Location"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="contact-sec">
+        <div class="wrap">
+            <div class="sec-head" data-aos="fade-up">
+                <div class="tag tag-red"><i class="fas fa-envelope"></i> Book a Service</div>
+                <h2 class="sec-title">Get In <span class="g-red">Touch</span></h2>
+                <p class="sec-sub">Fill in your details and we'll get back to you within minutes</p>
+            </div>
+            <div class="contact-grid">
+                <div data-aos="fade-right">
+                    <p class="c-social-head">Connect With Us</p>
+                    <div class="socials">
+                        <a href="https://instagram.com" target="_blank" class="s-btn ig" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" class="s-btn fb" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/919999999999" target="_blank" class="s-btn wa" aria-label="WhatsApp"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.google.com/maps/search/Cars+Town+Greater+Noida" target="_blank"
+                            class="s-btn gm" aria-label="Google Maps"><i class="fas fa-map-marker-alt"></i></a>
+                    </div>
+                    <div class="hours-box">
+                        <h4><i class="fas fa-clock"></i> Business Hours</h4>
+                        <ul>
+                            <li><span>Monday</span><span>8:00 AM – 8:00 PM</span></li>
+                            <li><span>Tuesday</span><span>8:00 AM – 8:00 PM</span></li>
+                            <li><span>Wednesday</span><span>8:00 AM – 8:00 PM</span></li>
+                            <li><span>Thursday</span><span>8:00 AM – 8:00 PM</span></li>
+                            <li><span>Friday</span><span>8:00 AM – 8:00 PM</span></li>
+                            <li><span>Saturday</span><span>8:00 AM – 8:00 PM</span></li>
+                            <li class="special"><span>Sunday</span><span>Open 24 Hours 🌟</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-box" data-aos="fade-left">
+                    <form class="c-form" id="contactForm" novalidate>
+                        <div class="fgrp">
+                            <input type="text" id="fName" name="name" placeholder=" " required>
+                            <label for="fName">Your Name</label>
+                            <div class="f-bar"></div>
+                        </div>
+                        <div class="fgrp">
+                            <input type="tel" id="fPhone" name="phone" placeholder=" " required>
+                            <label for="fPhone">Phone Number</label>
+                            <div class="f-bar"></div>
+                        </div>
+                        <div class="fgrp">
+                            <input type="email" id="fEmail" name="email" placeholder=" " required>
+                            <label for="fEmail">Email Address</label>
+                            <div class="f-bar"></div>
+                        </div>
+                        <div class="fgrp">
+                            <select id="fService" name="service">
+                                <option value="" disabled selected>Select a Service</option>
+                                <option>Car Washing</option>
+                                <option>Interior Cleaning</option>
+                                <option>Engine Diagnostics</option>
+                                <option>Oil Change</option>
+                                <option>Brake Repair</option>
+                                <option>Car Polishing</option>
+                                <option>Ceramic Coating</option>
+                                <option>Complete Detailing</option>
+                            </select>
+                            <div class="f-bar"></div>
+                        </div>
+                        <div class="fgrp">
+                            <textarea id="fMsg" name="message" rows="4" placeholder=" " required></textarea>
+                            <label for="fMsg">Your Message</label>
+                            <div class="f-bar"></div>
+                        </div>
+                        <button type="submit" class="btn btn-red form-submit" id="formBtn">
+                            <span class="bt">Send Message</span>
+                            <span class="bi"><i class="fas fa-paper-plane"></i></span>
+                            <span class="bs" style="display:none"><i class="fas fa-check"></i> Sent!</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-glow"></div>
+        <div class="wrap">
+            <div class="footer-top">
+                <div>
+                    <div class="footer-logo"><span class="ni"><i class="fas fa-car"></i></span><span><span
+                                class="nl-r">CARS</span>TOWN</span></div>
+                    <p class="ft-tag">Premium Car Detailing &amp; Automotive Care</p>
+                    <p class="ft-addr"><i class="fas fa-map-marker-alt"></i> Theta 2, Greater Noida</p>
+                    <div class="ft-social">
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/919999999999" target="_blank" aria-label="WhatsApp"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.google.com/maps/search/Cars+Town+Greater+Noida" target="_blank"
+                            aria-label="Google"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Car Washing</a></li>
+                        <li><a href="#services">Interior Cleaning</a></li>
+                        <li><a href="#services">Car Polishing</a></li>
+                        <li><a href="#services">Ceramic Coating</a></li>
+                        <li><a href="#services">Complete Detailing</a></li>
+                        <li><a href="#services">Engine Diagnostics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i><a href="tel:+919999999999">+91 99999 99999</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Theta 2, Greater Noida</li>
+                        <li><i class="fas fa-clock"></i> Mon–Sat: 8AM–8PM</li>
+                        <li><i class="fas fa-star"></i> Sunday: 24 Hours</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cars Town. All Rights Reserved. | Designed with <i class="fas fa-heart"
+                        style="color:var(--red)"></i> in Greater Noida</p>
+                <a href="#home" class="back-top" id="backTop" aria-label="Back to top"><i
+                        class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
